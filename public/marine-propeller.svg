@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<defs>
+  <radialGradient id="hub" cx="35%" cy="30%">
+    <stop offset="0" stop-color="#d9dde0"/><stop offset=".38" stop-color="#737d84"/>
+    <stop offset=".7" stop-color="#30373d"/><stop offset="1" stop-color="#111519"/>
+  </radialGradient>
+  <linearGradient id="blade" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d7dcdf"/><stop offset=".25" stop-color="#737d84"/>
+    <stop offset=".6" stop-color="#343b41"/><stop offset="1" stop-color="#111519"/>
+  </linearGradient>
+  <filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="450" cy="470" rx="320" ry="310" fill="#000" opacity=".32" filter="url(#shadow)"/>
+<g transform="translate(450 450)">
+  <g fill="url(#blade)" stroke="#9da6ab" stroke-width="6">
+    <path d="M-46-55 C-155-105-315-120-382-70 C-325 12-190 48-55 25 C-8 17 0-20-46-55Z"/>
+    <path d="M55-46 C105-155 120-315 70-382 C-12-325-48-190-25-55 C-17-8 20 0 55-46Z"/>
+    <path d="M46 55 C155 105 315 120 382 70 C325-12 190-48 55-25 C8-17 0 20 46 55Z"/>
+    <path d="M-55 46 C-105 155-120 315-70 382 C12 325 48 190 25 55 C17 8-20 0-55 46Z"/>
+  </g>
+  <circle r="105" fill="url(#hub)" stroke="#b9c0c4" stroke-width="9"/>
+  <circle r="65" fill="#171c20" stroke="#8f989e" stroke-width="7"/>
+  <circle r="22" fill="#c3c9cc"/>
+  <g fill="#c3c9cc" stroke="#15191c" stroke-width="5">
+    <circle cx="0" cy="-48" r="9"/><circle cx="48" cy="0" r="9"/><circle cx="0" cy="48" r="9"/><circle cx="-48" cy="0" r="9"/>
+  </g>
+</g>
+</svg>

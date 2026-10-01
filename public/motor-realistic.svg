@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+<defs>
+  <linearGradient id="body" x1="0" x2="1"><stop offset="0" stop-color="#252a2f"/><stop offset=".45" stop-color="#667078"/><stop offset=".72" stop-color="#30363b"/><stop offset="1" stop-color="#15191d"/></linearGradient>
+  <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#101418"/><stop offset=".35" stop-color="#8a949b"/><stop offset=".55" stop-color="#343b40"/><stop offset="1" stop-color="#090c0f"/></linearGradient>
+  <linearGradient id="end" y1="0" y2="1"><stop offset="0" stop-color="#737e85"/><stop offset=".5" stop-color="#20262a"/><stop offset="1" stop-color="#090c0f"/></linearGradient>
+  <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<ellipse cx="700" cy="735" rx="520" ry="58" fill="#000" opacity=".55" filter="url(#shadow)"/>
+<!-- feet -->
+<path d="M280 650h150v110H300zM930 650h150v110H950z" fill="#171c20" stroke="#8a949b" stroke-width="8"/>
+<rect x="315" y="735" width="105" height="28" rx="8" fill="#080a0c"/>
+<rect x="980" y="735" width="105" height="28" rx="8" fill="#080a0c"/>
+<!-- motor body -->
+<path d="M265 270 Q300 210 385 205 L985 205 Q1080 210 1115 275 L1115 600 Q1080 670 990 680 L385 680 Q300 670 265 600Z" fill="url(#body)" stroke="#aab2b7" stroke-width="9"/>
+<!-- cooling fins -->
+<g fill="#151a1e" stroke="#8b959b" stroke-width="6">
+  <path d="M380 205v475"/><path d="M440 205v475"/><path d="M500 205v475"/><path d="M560 205v475"/>
+  <path d="M620 205v475"/><path d="M680 205v475"/><path d="M740 205v475"/><path d="M800 205v475"/>
+  <path d="M860 205v475"/><path d="M920 205v475"/><path d="M980 205v475"/>
+</g>
+<!-- end bell -->
+<ellipse cx="260" cy="440" rx="145" ry="230" fill="url(#end)" stroke="#aab2b7" stroke-width="10"/>
+<ellipse cx="1140" cy="440" rx="145" ry="230" fill="url(#end)" stroke="#aab2b7" stroke-width="10"/>
+<ellipse cx="205" cy="440" rx="88" ry="145" fill="#151a1e" stroke="#7f8a91" stroke-width="8"/>
+<ellipse cx="1195" cy="440" rx="88" ry="145" fill="#151a1e" stroke="#7f8a91" stroke-width="8"/>
+<!-- shaft -->
+<rect x="90" y="405" width="160" height="70" rx="12" fill="url(#metal)" stroke="#c0c7cb" stroke-width="7"/>
+<rect x="1150" y="405" width="160" height="70" rx="12" fill="url(#metal)" stroke="#c0c7cb" stroke-width="7"/>
+<!-- shaft key -->
+<rect x="112" y="387" width="85" height="18" rx="4" fill="#c7cdd1"/>
+<rect x="1202" y="495" width="85" height="18" rx="4" fill="#c7cdd1"/>
+<!-- terminal box -->
+<rect x="660" y="120" width="190" height="110" rx="12" fill="#242a2f" stroke="#aab2b7" stroke-width="8"/>
+<rect x="685" y="143" width="140" height="62" rx="8" fill="#0b0e11" stroke="#606a70" stroke-width="5"/>
+<circle cx="715" cy="174" r="9" fill="#d5dadd"/><circle cx="750" cy="174" r="9" fill="#d5dadd"/><circle cx="785" cy="174" r="9" fill="#d5dadd"/>
+<!-- nameplate -->
+<rect x="555" y="500" width="310" height="105" rx="8" fill="#c5c9cb" stroke="#15191c" stroke-width="7"/>
+<text x="710" y="538" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#101417">VIBROTECH BALANCING</text>
+<text x="710" y="572" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#20262a">HV INDUCTION MOTOR • 3000 RPM</text>
+<!-- bolts -->
+<g fill="#c4cbd0" stroke="#15191d" stroke-width="4">
+<circle cx="205" cy="290" r="12"/><circle cx="205" cy="590" r="12"/>
+<circle cx="1195" cy="290" r="12"/><circle cx="1195" cy="590" r="12"/>
+</g>
+</svg>
