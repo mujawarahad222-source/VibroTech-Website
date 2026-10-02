@@ -444,7 +444,7 @@ function App() {
               <div className="industry-card"><span>04</span><strong>PETROCHEMICAL</strong></div>
               <div className="industry-card"><span>05</span><strong>NAVY</strong></div>
               <div className="industry-card"><span>06</span><strong>COAST GUARD</strong></div>
-              <div className="industry-card"><span>07</span><strong>MANUFACTURERS</strong></div>
+              <div className="industry-card"><span>07</span><strong>MANUFACTURERS</strong></div><div className="industry-card"><span>08</span><strong>STEEL PLANTS</strong></div>
             </div>
           </div>
         </section>

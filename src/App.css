@@ -3353,11 +3353,6 @@ footer{
   font-weight:800;
 }
 
-.industry-card:nth-child(5),
-.industry-card:nth-child(6),
-.industry-card:nth-child(7){
-  min-height:125px;
-}
 
 /* Tablet */
 @media(max-width:1100px){
@@ -3385,10 +3380,7 @@ footer{
     min-height:125px;
   }
 
-  .industry-card,
-  .industry-card:nth-child(5),
-  .industry-card:nth-child(6),
-  .industry-card:nth-child(7){
+  .industry-card{
     min-height:115px;
   }
 
