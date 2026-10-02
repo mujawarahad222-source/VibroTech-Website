@@ -3307,11 +3307,12 @@ footer{
 .industries-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:135px;
   gap:10px;
 }
 
 .industry-card{
-  min-height:135px;
+  height:135px;
   padding:20px;
   border:1px solid #263039;
   background:#0a0e11;
@@ -3381,7 +3382,7 @@ footer{
   }
 
   .industry-card{
-    min-height:115px;
+    height:115px;
   }
 
 }
