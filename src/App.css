@@ -3228,3 +3228,190 @@ footer{
   }
 
 }
+
+
+/* STACKED HEADINGS - WHY VIBROTECH + INDUSTRIES */
+.section-heading-stacked{display:block;width:100%;margin-bottom:36px}.section-heading-stacked .section-kicker{display:block;margin-bottom:10px}.section-heading-stacked h2{display:block;width:100%;margin:0 0 10px;white-space:nowrap}.section-heading-stacked p{display:block;width:100%;margin:0;color:#7f8b91;font-size:13px;line-height:1.6}@media(max-width:1100px){.section-heading-stacked h2{white-space:normal}}
+/* =========================================================
+   WHY VIBROTECH + INDUSTRIES
+   ========================================================= */
+
+.why-vibrotech-section,
+.industries-section{
+  position:relative;
+}
+
+.why-vibrotech-inner,
+.industries-inner{
+  position:relative;
+  z-index:1;
+}
+
+.why-vibrotech-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.why-vibrotech-card{
+  min-height:155px;
+  padding:24px 22px;
+  border:1px solid #263039;
+  background:#0a0e11;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  transition:.2s;
+}
+
+.why-vibrotech-card:hover{
+  border-color:var(--blue);
+  transform:translateY(-3px);
+}
+
+.why-vibrotech-card::before{
+  content:;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:var(--blue);
+  opacity:.75;
+}
+
+.why-vibrotech-card strong{
+  display:block;
+  font-size:clamp(22px,2.2vw,34px);
+  line-height:1.1;
+  letter-spacing:.03em;
+  font-weight:800;
+}
+
+.why-vibrotech-card span{
+  display:block;
+  margin-top:9px;
+  color:#7f8b91;
+  font-size:10px;
+  line-height:1.5;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.accuracy-card strong{
+  font-size:clamp(18px,1.8vw,27px);
+}
+
+.industries-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.industry-card{
+  min-height:135px;
+  padding:20px;
+  border:1px solid #263039;
+  background:#0a0e11;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:relative;
+  overflow:hidden;
+  transition:.2s;
+}
+
+.industry-card:hover{
+  border-color:var(--blue);
+  transform:translateY(-3px);
+}
+
+.industry-card::after{
+  content:;
+  position:absolute;
+  width:90px;
+  height:90px;
+  right:-48px;
+  bottom:-48px;
+  border:1px solid #1b272e;
+  border-radius:50%;
+}
+
+.industry-card span{
+  color:#56636a;
+  font-size:9px;
+  letter-spacing:.12em;
+  font-weight:700;
+}
+
+.industry-card strong{
+  font-size:clamp(14px,1.5vw,19px);
+  line-height:1.25;
+  letter-spacing:.06em;
+  font-weight:800;
+}
+
+.industry-card:nth-child(5),
+.industry-card:nth-child(6),
+.industry-card:nth-child(7){
+  min-height:125px;
+}
+
+/* Tablet */
+@media(max-width:1100px){
+
+  .why-vibrotech-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .industries-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* Mobile */
+@media(max-width:720px){
+
+  .why-vibrotech-grid,
+  .industries-grid{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .why-vibrotech-card{
+    min-height:125px;
+  }
+
+  .industry-card,
+  .industry-card:nth-child(5),
+  .industry-card:nth-child(6),
+  .industry-card:nth-child(7){
+    min-height:115px;
+  }
+
+}
+
+/* INDUSTRIES HEADING - FIT SINGLE LINE */
+.industries-section .section-heading-stacked h2{font-size:clamp(32px,4vw,54px);letter-spacing:-0.02em}
+
+/* INDUSTRY FEATURE CARDS - MOTOR + MARINE PROPELLER */
+.industry-feature{min-height:190px;justify-content:flex-end;padding:20px;isolation:isolate}
+.industry-feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:18px;opacity:.34;z-index:-1;filter:grayscale(100%)}
+.industry-feature::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,9,12,.08) 15%,rgba(5,9,12,.88) 100%);z-index:-1}
+.industry-feature span{position:relative;z-index:2}
+.industry-feature strong{position:relative;z-index:2;font-size:clamp(17px,1.7vw,23px);text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.marine-feature img{padding:8px 20px 18px;transform:scale(1.08)}
+.manufacturer-feature img{padding:22px 38px 12px;transform:scale(1.12)}
+.industry-feature:hover img{opacity:.52;transform:scale(1.16)}
+.marine-feature:hover img{transform:scale(1.12)}
+.manufacturer-feature:hover img{transform:scale(1.20)}
+@media(max-width:720px){
+  .industry-feature{min-height:160px}
+  .industry-feature img{opacity:.28}
+}
+
+/* CENTER SECOND ROW OF INDUSTRIES */
+@media(min-width:1101px){.industries-grid .industry-card:nth-child(5){grid-column:1 / 2;margin-left:50%}.industries-grid .industry-card:nth-child(6){grid-column:2 / 3}.industries-grid .industry-card:nth-child(7){grid-column:3 / 4;margin-right:-50%}}

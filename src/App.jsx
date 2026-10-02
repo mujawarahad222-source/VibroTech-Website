@@ -91,8 +91,10 @@ function App() {
 
         <nav className={mobileMenu ? 'nav open' : 'nav'}>
           <button onClick={() => scrollTo('home')}>HOME</button>
-          <button onClick={() => scrollTo('monitor')}>LIVE MONITOR</button>
+          <button onClick={() => scrollTo('why-vibrotech')}>WHY VIBROTECH</button>
           <button onClick={() => scrollTo('services')}>SERVICES</button>
+          <button onClick={() => scrollTo('monitor')}>LIVE MONITOR DISPLAY</button>
+          <button onClick={() => scrollTo('industries')}>INDUSTRIES WE SERVE</button>
           <button onClick={() => scrollTo('contact')}>CONTACT</button>
         </nav>
 
@@ -409,6 +411,43 @@ function App() {
         </section>
 
         
+
+        <section id="why-vibrotech" className="section why-vibrotech-section">
+          <div className="section-inner why-vibrotech-inner">
+            <div className="section-heading section-heading-stacked">
+              <span className="section-kicker">WHY VIBROTECH</span>
+              <h2>Built For <span>Precision.</span></h2>
+              <p>Industrial balancing capability backed by practical engineering support from Navi Mumbai.</p>
+            </div>
+            <div className="why-vibrotech-grid">
+              <div className="why-vibrotech-card"><strong>20 TON</strong><span>Job weight capacity</span></div>
+              <div className="why-vibrotech-card"><strong>5 M</strong><span>Maximum OD</span></div>
+              <div className="why-vibrotech-card"><strong>15 M</strong><span>Maximum job length</span></div>
+              <div className="why-vibrotech-card"><strong>3000 RPM</strong><span>Balancing capability</span></div>
+              <div className="why-vibrotech-card"><strong>NAVI MUMBAI</strong><span>Strategic Navi Mumbai location</span></div>
+              <div className="why-vibrotech-card accuracy-card"><strong>EXCELLENT ACCURACY</strong><span>Precision-focused balancing</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="industries" className="section industries-section">
+          <div className="section-inner industries-inner">
+            <div className="section-heading section-heading-stacked">
+              <span className="section-kicker">INDUSTRIES WE SERVE</span>
+              <h2>Engineering Support Across <span>Critical Industries.</span></h2>
+              <p>Balancing, vibration and rotating-equipment services for demanding industrial environments.</p>
+            </div>
+            <div className="industries-grid">
+              <div className="industry-card industry-feature marine-feature"><img src="/Marine-Propeller.png" alt="Marine propeller"/><span>01</span><strong>MARINE</strong></div>
+              <div className="industry-card"><span>02</span><strong>POWER PLANTS</strong></div>
+              <div className="industry-card"><span>03</span><strong>OIL &amp; GAS</strong></div>
+              <div className="industry-card"><span>04</span><strong>PETROCHEMICAL</strong></div>
+              <div className="industry-card"><span>05</span><strong>NAVY</strong></div>
+              <div className="industry-card"><span>06</span><strong>COAST GUARD</strong></div>
+              <div className="industry-card industry-feature manufacturer-feature"><img src="/motor-realistic.svg" alt="Industrial motor"/><span>07</span><strong>MANUFACTURERS</strong></div>
+            </div>
+          </div>
+        </section>
 
         <section id="contact" className="section contact-section">
 
