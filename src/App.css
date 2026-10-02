@@ -3388,3 +3388,7 @@ footer{
 /* INDUSTRIES HEADING - FIT SINGLE LINE */
 .industries-section .section-heading-stacked h2{font-size:clamp(32px,4vw,54px);letter-spacing:-0.02em}
 
+.industry-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}
+.industry-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.78));z-index:1;pointer-events:none}
+.industry-card > span,.industry-card > strong{position:relative;z-index:2}
+.industry-card > strong{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.8)}
