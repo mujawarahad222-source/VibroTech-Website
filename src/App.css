@@ -3397,21 +3397,5 @@ footer{
 /* INDUSTRIES HEADING - FIT SINGLE LINE */
 .industries-section .section-heading-stacked h2{font-size:clamp(32px,4vw,54px);letter-spacing:-0.02em}
 
-/* INDUSTRY FEATURE CARDS - MOTOR + MARINE PROPELLER */
-.industry-feature{min-height:190px;justify-content:flex-end;padding:20px;isolation:isolate}
-.industry-feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:18px;opacity:.34;z-index:-1;filter:grayscale(100%)}
-.industry-feature::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,9,12,.08) 15%,rgba(5,9,12,.88) 100%);z-index:-1}
-.industry-feature span{position:relative;z-index:2}
-.industry-feature strong{position:relative;z-index:2;font-size:clamp(17px,1.7vw,23px);text-shadow:0 2px 12px rgba(0,0,0,.8)}
-.marine-feature img{padding:8px 20px 18px;transform:scale(1.08)}
-.manufacturer-feature img{padding:22px 38px 12px;transform:scale(1.12)}
-.industry-feature:hover img{opacity:.52;transform:scale(1.16)}
-.marine-feature:hover img{transform:scale(1.12)}
-.manufacturer-feature:hover img{transform:scale(1.20)}
-@media(max-width:720px){
-  .industry-feature{min-height:160px}
-  .industry-feature img{opacity:.28}
-}
-
 /* CENTER SECOND ROW OF INDUSTRIES */
 @media(min-width:1101px){.industries-grid .industry-card:nth-child(5){grid-column:1 / 2;margin-left:50%}.industries-grid .industry-card:nth-child(6){grid-column:2 / 3}.industries-grid .industry-card:nth-child(7){grid-column:3 / 4;margin-right:-50%}}

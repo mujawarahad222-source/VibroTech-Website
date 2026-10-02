@@ -438,13 +438,13 @@ function App() {
               <p>Balancing, vibration and rotating-equipment services for demanding industrial environments.</p>
             </div>
             <div className="industries-grid">
-              <div className="industry-card industry-feature marine-feature"><img src="/Marine-Propeller.png" alt="Marine propeller"/><span>01</span><strong>MARINE</strong></div>
+              <div className="industry-card"><span>01</span><strong>MARINE</strong></div>
               <div className="industry-card"><span>02</span><strong>POWER PLANTS</strong></div>
               <div className="industry-card"><span>03</span><strong>OIL &amp; GAS</strong></div>
               <div className="industry-card"><span>04</span><strong>PETROCHEMICAL</strong></div>
               <div className="industry-card"><span>05</span><strong>NAVY</strong></div>
               <div className="industry-card"><span>06</span><strong>COAST GUARD</strong></div>
-              <div className="industry-card industry-feature manufacturer-feature"><img src="/motor-realistic.svg" alt="Industrial motor"/><span>07</span><strong>MANUFACTURERS</strong></div>
+              <div className="industry-card"><span>07</span><strong>MANUFACTURERS</strong></div>
             </div>
           </div>
         </section>
