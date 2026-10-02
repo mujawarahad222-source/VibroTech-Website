@@ -421,8 +421,8 @@ function App() {
             </div>
             <div className="why-vibrotech-grid">
               <div className="why-vibrotech-card"><strong>20 TON</strong><span>Job weight capacity</span></div>
-              <div className="why-vibrotech-card"><strong>5 M</strong><span>Maximum OD</span></div>
-              <div className="why-vibrotech-card"><strong>15 M</strong><span>Maximum job length</span></div>
+              <div className="why-vibrotech-card"><strong>5 METER</strong><span>Maximum OD</span></div>
+              <div className="why-vibrotech-card"><strong>15 METER</strong><span>Maximum job length</span></div>
               <div className="why-vibrotech-card"><strong>3000 RPM</strong><span>Balancing capability</span></div>
               <div className="why-vibrotech-card"><strong>NAVI MUMBAI</strong><span>Strategic Navi Mumbai location</span></div>
               <div className="why-vibrotech-card accuracy-card"><strong>EXCELLENT ACCURACY</strong><span>Precision-focused balancing</span></div>
