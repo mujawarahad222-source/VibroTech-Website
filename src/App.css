@@ -3388,5 +3388,3 @@ footer{
 /* INDUSTRIES HEADING - FIT SINGLE LINE */
 .industries-section .section-heading-stacked h2{font-size:clamp(32px,4vw,54px);letter-spacing:-0.02em}
 
-/* CENTER SECOND ROW OF INDUSTRIES */
-@media(min-width:1101px){.industries-grid .industry-card:nth-child(5){grid-column:1 / 2;margin-left:50%}.industries-grid .industry-card:nth-child(6){grid-column:2 / 3}.industries-grid .industry-card:nth-child(7){grid-column:3 / 4;margin-right:-50%}}
