@@ -588,7 +588,7 @@ function App() {
 
         <div className="footer-main">
           <span>© VIBROTECH BALANCING</span>
-          <span>VIBRATION • BALANCING • ALIGNMENT • CONDITION MONITORING</span>
+          <span>VIBRATION ANALYSIS • BALANCING • ALIGNMENT • CONDITION MONITORING</span>
         </div>
 
         <div className="visitor-counter">
@@ -597,11 +597,6 @@ function App() {
           <strong>{visitorCount !== null ? visitorCount.toLocaleString() : '—'}</strong>
         </div>
 
-        <div className="footer-contact-line">
-          <span>ABDUL AHAD: 8454987213 / 9867427537</span>
-          <span>ABDUS SAMAD: 7710967549</span>
-          <span>GST: 27CXVPM5902P1ZH</span>
-        </div>
 
       </footer>
     </div>

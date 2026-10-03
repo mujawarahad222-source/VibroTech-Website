@@ -1811,16 +1811,6 @@ footer{
   50%{opacity:1}
 }
 
-.footer-contact-line{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-  font-family:monospace;
-  font-size:7px;
-  letter-spacing:.8px;
-  color:rgba(125,160,172,.55);
-}
-
 /* MOBILE */
 
 @media (max-width:800px){
