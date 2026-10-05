@@ -1,4 +1,5 @@
 ﻿import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   Activity, Anchor, ArrowDownRight, ArrowUpRight, BarChart3, Gauge,
   Menu, MoveRight, Radio, Settings2, Thermometer, Waves, X
@@ -10,6 +11,15 @@ const sensorPoints = [
   ['DE','V','Drive End • Vertical'], ['DE','H','Drive End • Horizontal'], ['DE','A','Drive End • Axial'],
   ['NDE','V','Non-Drive End • Vertical'], ['NDE','H','Non-Drive End • Horizontal'], ['NDE','A','Non-Drive End • Axial'],
 ]
+
+const servicePaths = {
+  "Vibration Analysis": "/services/vibration-analysis/",
+  "Dynamic Balancing": "/services/dynamic-balancing/",
+  "Laser Shaft Alignment": "/services/laser-shaft-alignment/",
+  "Condition Monitoring": "/services/condition-monitoring/",
+  "Thermography": "/services/thermography/",
+  "Heavy Machining & Shaft Grinding": "/services/heavy-machining/",
+}
 
 const services = [
   { title:'Vibration Analysis', text:'Machine vibration measurement, spectrum review and engineering interpretation.', icon:Activity },
@@ -209,7 +219,7 @@ function App() {
           </div>
           <div className="services-grid">
             {services.map(({title,text,icon:Icon}) => (
-              <article className={`service-card ${title === 'Vibration Analysis' ? 'vibration-analysis-card' : ''} ${title === 'Dynamic Balancing' ? 'dynamic-balancing-card' : ''} ${title === 'Condition Monitoring' ? 'condition-monitoring-card' : ''} ${title === 'Thermography' ? 'thermography-card' : ''} ${title === 'Heavy Machining & Shaft Grinding' ? 'shaft-grinding-card' : ''} ${title === 'Laser Shaft Alignment' ? 'laser-alignment-card' : ''}`} key={title}>
+              <Link to={servicePaths[title]} className={`service-card ${title === 'Vibration Analysis' ? 'vibration-analysis-card' : ''} ${title === 'Dynamic Balancing' ? 'dynamic-balancing-card' : ''} ${title === 'Condition Monitoring' ? 'condition-monitoring-card' : ''} ${title === 'Thermography' ? 'thermography-card' : ''} ${title === 'Heavy Machining & Shaft Grinding' ? 'shaft-grinding-card' : ''} ${title === 'Laser Shaft Alignment' ? 'laser-alignment-card' : ''}`} key={title}>
                 {title === 'Vibration Analysis' && (
                   <div className="service-spectrum" aria-hidden="true">
                     <div className="spectrum-grid"></div>
@@ -405,7 +415,7 @@ function App() {
                   <p>{text}</p>
                   <span>ENGINEERING SERVICE <MoveRight size={15}/></span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </section>
@@ -438,14 +448,14 @@ function App() {
               <p>Balancing, vibration and rotating-equipment services for demanding industrial environments.</p>
             </div>
             <div className="industries-grid">
-              <div className="industry-card"><video className="industry-video" src="/videos/MARINE.mp4" autoPlay muted loop playsInline preload="metadata" /><span>01</span><strong>MARINE</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/POWER%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>02</span><strong>POWER PLANTS</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/OIL%20%26%20GAS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>03</span><strong>OIL &amp; GAS</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/PETROCHEMICAL.mp4" autoPlay muted loop playsInline preload="metadata" /><span>04</span><strong>PETROCHEMICAL</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/NAVY.mp4" autoPlay muted loop playsInline preload="metadata" /><span>05</span><strong>NAVY</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/COAST%20GUARD.mp4" autoPlay muted loop playsInline preload="metadata" /><span>06</span><strong>COAST GUARD</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/MANUFACTURERS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>07</span><strong>MANUFACTURERS</strong></div>
-              <div className="industry-card"><video className="industry-video" src="/videos/STEEL%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>08</span><strong>STEEL PLANTS</strong></div>
+              <Link to="/industries/marine/" className="industry-card"><video className="industry-video" src="/videos/MARINE.mp4" autoPlay muted loop playsInline preload="metadata" /><span>01</span><strong>MARINE</strong></Link>
+              <Link to="/industries/power-plants/" className="industry-card"><video className="industry-video" src="/videos/POWER%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>02</span><strong>POWER PLANTS</strong></Link>
+              <Link to="/industries/oil-gas/" className="industry-card"><video className="industry-video" src="/videos/OIL%20%26%20GAS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>03</span><strong>OIL &amp; GAS</strong></Link>
+              <Link to="/industries/petrochemical/" className="industry-card"><video className="industry-video" src="/videos/PETROCHEMICAL.mp4" autoPlay muted loop playsInline preload="metadata" /><span>04</span><strong>PETROCHEMICAL</strong></Link>
+              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/NAVY.mp4" autoPlay muted loop playsInline preload="metadata" /><span>05</span><strong>NAVY</strong></Link>
+              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/COAST%20GUARD.mp4" autoPlay muted loop playsInline preload="metadata" /><span>06</span><strong>COAST GUARD</strong></Link>
+              <Link to="/industries/manufacturing/" className="industry-card"><video className="industry-video" src="/videos/MANUFACTURERS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>07</span><strong>MANUFACTURERS</strong></Link>
+              <Link to="/industries/steel-plants/" className="industry-card"><video className="industry-video" src="/videos/STEEL%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>08</span><strong>STEEL PLANTS</strong></Link>
             </div>
           </div>
         </section>
