@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mujawarahad222-source.github.io/VibroTech-Website/sitemap.xml
+Sitemap: https://vibrotechbalancing.com/sitemap.xml
