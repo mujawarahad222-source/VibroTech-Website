@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import App from './App'
 import DynamicBalancing from './pages/DynamicBalancing'
 import VibrationAnalysis from './pages/VibrationAnalysis'
@@ -31,9 +32,22 @@ import RotorBalancingMaharashtra from './pages/RotorBalancingMaharashtra'
 import DynamicBalancingThane from './pages/DynamicBalancingThane'
 import DynamicBalancingPune from './pages/DynamicBalancingPune'
 
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [pathname])
+
+  return null
+}
+
 export default function AppRouter() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<App />} />
       <Route
         path="/services/dynamic-balancing/"
@@ -155,6 +169,7 @@ export default function AppRouter() {
         path="/locations/dynamic-balancing-pune/"
         element={<DynamicBalancingPune />}
       />
-    </Routes>
+      </Routes>
+    </>
   )
 }
