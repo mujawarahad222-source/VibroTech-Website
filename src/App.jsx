@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Activity, Anchor, ArrowDownRight, ArrowUpRight, BarChart3, Gauge,
@@ -579,7 +579,63 @@ function App() {
               </a>
             </div>
 
-            <div className="contact-bottom-strip">
+            <div className="inquiry-form-wrap">
+  <div className="inquiry-form-heading">
+    <span className="section-kicker">ENGINEERING ENQUIRY</span>
+    <h3>Tell Us About Your Requirement</h3>
+    <p>Share your machine details and service needs. Our team will get in touch with you.</p>
+  </div>
+
+  <form className="inquiry-form" action="https://formsubmit.co/vibrotechbalancing@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Website Enquiry - VibroTech Balancing" />
+    <input type="hidden" name="_template" value="table" />
+
+    <div className="inquiry-form-grid">
+      <div className="inquiry-field">
+        <label htmlFor="inquiry-name">Full Name *</label>
+        <input id="inquiry-name" name="name" type="text" autoComplete="name" placeholder="Your full name" required />
+      </div>
+      <div className="inquiry-field">
+        <label htmlFor="inquiry-company">Company Name</label>
+        <input id="inquiry-company" name="company" type="text" autoComplete="organization" placeholder="Your company" />
+      </div>
+      <div className="inquiry-field">
+        <label htmlFor="inquiry-phone">Phone Number *</label>
+        <input id="inquiry-phone" name="phone" type="tel" autoComplete="tel" placeholder="Your contact number" required />
+      </div>
+      <div className="inquiry-field">
+        <label htmlFor="inquiry-email">Email Address *</label>
+        <input id="inquiry-email" name="email" type="email" autoComplete="email" placeholder="you@company.com" required />
+      </div>
+      <div className="inquiry-field inquiry-field-full">
+        <label htmlFor="inquiry-service">Service Required *</label>
+        <select id="inquiry-service" name="service" defaultValue="" required>
+          <option value="" disabled>Select a service</option>
+          <option>Dynamic Balancing</option>
+          <option>Marine Propeller Balancing</option>
+          <option>Motor / Rotor Balancing</option>
+          <option>Vibration Analysis</option>
+          <option>Laser Shaft Alignment</option>
+          <option>Condition Monitoring</option>
+          <option>Thermography</option>
+          <option>Heavy Machining</option>
+          <option>Shaft Grinding</option>
+          <option>Other Engineering Requirement</option>
+        </select>
+      </div>
+      <div className="inquiry-field inquiry-field-full">
+        <label htmlFor="inquiry-message">Enquiry Details *</label>
+        <textarea id="inquiry-message" name="message" rows="5" placeholder="Describe the machine, component, dimensions, operating speed or service required..." required />
+      </div>
+    </div>
+
+    <button className="inquiry-submit-btn" type="submit">
+      SEND ENQUIRY <MoveRight size={18} />
+    </button>
+    <p className="inquiry-privacy-note">Your details will be used to respond to your engineering enquiry.</p>
+  </form>
+</div>
+<div className="contact-bottom-strip">
               <span>ROTATING EQUIPMENT</span>
               <i></i>
               <span>PRECISION ENGINEERING</span>
@@ -614,39 +670,3 @@ function App() {
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

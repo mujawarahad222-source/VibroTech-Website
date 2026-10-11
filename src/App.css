@@ -3851,3 +3851,190 @@ footer{
   }
 }
 
+
+/* =========================================================
+   INQUIRY FORM — RESPONSIVE DESKTOP, TABLET AND MOBILE
+   ========================================================= */
+
+.inquiry-form-wrap {
+  position: relative;
+  z-index: 12;
+  width: min(100%, 1000px);
+  margin: 54px auto 42px;
+  padding: clamp(22px, 4vw, 42px);
+  box-sizing: border-box;
+  background: rgba(5, 12, 17, 0.88);
+  border: 1px solid rgba(90, 190, 220, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
+}
+
+.inquiry-form-heading {
+  margin-bottom: 28px;
+}
+
+.inquiry-form-heading h3 {
+  margin: 10px 0 12px;
+  color: #edfaff;
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.2;
+}
+
+.inquiry-form-heading p {
+  max-width: 680px;
+  margin: 0;
+  color: #aabcc4;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.inquiry-form,
+.inquiry-form * {
+  box-sizing: border-box;
+}
+
+.inquiry-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.inquiry-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.inquiry-field-full {
+  grid-column: 1 / -1;
+}
+
+.inquiry-field label {
+  color: #d9edf4;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+.inquiry-field input,
+.inquiry-field select,
+.inquiry-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 13px 14px;
+  color: #edfaff;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  background: rgba(13, 27, 35, 0.96);
+  border: 1px solid rgba(112, 190, 215, 0.34);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inquiry-field input::placeholder,
+.inquiry-field textarea::placeholder {
+  color: #8297a1;
+  opacity: 1;
+}
+
+.inquiry-field select {
+  color-scheme: dark;
+}
+
+.inquiry-field textarea {
+  min-height: 135px;
+  resize: vertical;
+}
+
+.inquiry-field input:focus,
+.inquiry-field select:focus,
+.inquiry-field textarea:focus {
+  border-color: #69d8f5;
+  box-shadow: 0 0 0 3px rgba(105, 216, 245, 0.14);
+}
+
+.inquiry-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 50px;
+  margin-top: 25px;
+  padding: 14px 23px;
+  color: #041117;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  background: #69d8f5;
+  border: 1px solid #69d8f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.inquiry-submit-btn:hover {
+  background: #a1eaff;
+  transform: translateY(-1px);
+}
+
+.inquiry-submit-btn:focus-visible {
+  outline: 3px solid #edfaff;
+  outline-offset: 3px;
+}
+
+.inquiry-privacy-note {
+  margin: 14px 0 0;
+  color: #8297a1;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .inquiry-form-wrap {
+    width: 100%;
+    margin: 38px auto 30px;
+    padding: 22px 17px;
+    border-radius: 12px;
+  }
+
+  .inquiry-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .inquiry-field-full {
+    grid-column: auto;
+  }
+
+  .inquiry-submit-btn {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  .inquiry-field input,
+  .inquiry-field select,
+  .inquiry-field textarea {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inquiry-field input,
+  .inquiry-field select,
+  .inquiry-field textarea,
+  .inquiry-submit-btn {
+    transition: none;
+  }
+
+  .inquiry-submit-btn:hover {
+    transform: none;
+  }
+}
+
