@@ -1,18 +1,18 @@
-import SEOPage from './SEOPage'
+﻿import SEOPage from './SEOPage'
 
 export default function PumpBalancing() {
   return (
     <SEOPage
-      eyebrow="PUMP ROTATING EQUIPMENT"
+      eyebrow="PUMP IMPELLER ENGINEERING"
       title="Pump Impeller Balancing Services"
-      intro="Industrial pump balancing services for pump impellers, rotating assemblies, multistage pumps and critical pumping equipment."
+      intro="Pump impeller balancing services for industrial centrifugal pumps, single-stage and multistage impellers, pump rotor assemblies and critical pumping equipment."
       sections={[
         {
-          heading: 'Industrial Pump Balancing',
+          heading: 'Industrial Pump Impeller Balancing',
           text: 'VibroTech Balancing provides pump balancing support for rotating pump components where unbalance can contribute to vibration, bearing loading, mechanical stress and reduced equipment reliability.',
         },
         {
-          heading: 'Pump Balancing Applications',
+          heading: 'Pump Impeller Balancing Applications',
           text: 'Balancing requirements are evaluated according to pump construction, impeller geometry, rotor configuration, operating speed, correction locations and the applicable equipment requirements.',
           items: [
             'Pump impeller balancing',
@@ -24,7 +24,7 @@ export default function PumpBalancing() {
           ],
         },
         {
-          heading: 'Why Pump Balancing Matters',
+          heading: 'Why Pump Impeller Balancing Matters',
           text: 'Pump rotor and impeller unbalance can generate centrifugal forces during operation and contribute to vibration and mechanical loading. Proper balancing can help improve rotating stability and support reliable pump operation.',
         },
         {

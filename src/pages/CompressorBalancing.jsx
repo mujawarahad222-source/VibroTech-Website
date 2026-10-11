@@ -1,18 +1,18 @@
-import SEOPage from './SEOPage'
+﻿import SEOPage from './SEOPage'
 
 export default function CompressorBalancing() {
   return (
     <SEOPage
-      eyebrow="INDUSTRIAL COMPRESSOR ENGINEERING"
+      eyebrow="COMPRESSOR ROTOR ENGINEERING"
       title="Compressor Rotor Balancing Services"
-      intro="Industrial compressor balancing services for centrifugal compressors, reciprocating compressor rotating assemblies, compressor rotors and other critical rotating equipment."
+      intro="Compressor rotor balancing services for centrifugal compressor rotors, single-stage and multistage rotor assemblies, and critical industrial rotating equipment."
       sections={[
         {
-          heading: 'Industrial Compressor Balancing',
+          heading: 'Industrial Compressor Rotor Balancing',
           text: 'VibroTech Balancing provides compressor balancing support for industrial compressor rotors and rotating assemblies where unbalance can contribute to vibration, bearing loading, mechanical stress and reduced equipment reliability.',
         },
         {
-          heading: 'Compressor Balancing Applications',
+          heading: 'Compressor Rotor Balancing Applications',
           text: 'Balancing requirements are evaluated according to compressor construction, rotor geometry, operating speed, correction locations and the applicable equipment requirements.',
           items: [
             'Centrifugal compressor rotor balancing',
@@ -24,7 +24,7 @@ export default function CompressorBalancing() {
           ],
         },
         {
-          heading: 'Why Compressor Balancing Matters',
+          heading: 'Why Compressor Rotor Balancing Matters',
           text: 'Compressor rotor unbalance can generate centrifugal forces during operation and contribute to vibration, bearing loading and mechanical stress. Proper balancing can help improve rotating stability and support reliable compressor operation.',
         },
         {
