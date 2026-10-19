@@ -119,8 +119,34 @@ const capacity = {
 }
 balancing.splice(5, 0, capacity)
 Object.values(solutions).forEach((list) => list.splice(3, 0, capacity))
+const industry = (name, equipment) => [
+  {
+    q: "Which rotating equipment in " + name + " can VibroTech Balancing help with?",
+    a: "We support rotating equipment such as " + equipment + " with dynamic balancing, vibration analysis, laser shaft alignment and condition monitoring.",
+  },
+  {
+    q: "How do balancing and vibration analysis work together?",
+    a: "Vibration analysis identifies the cause of abnormal vibration, such as unbalance, misalignment, looseness or bearing defects. Balancing then corrects rotor unbalance when that is the cause, so the right fix is applied the first time.",
+  },
+  capacity,
+  {
+    q: "How can I request support for " + name + " equipment?",
+    a: "Call " + phone + " or email vibrotechbalancing@gmail.com with the equipment type, approximate weight, dimensions, operating speed and the problem you are seeing. We operate from " + address + ".",
+  },
+]
+
+const industries = {
+  "/industries/marine/": industry("marine applications", "propellers, shafts, pumps, fans, blowers, motors and generators"),
+  "/industries/naval-defence/": industry("naval and defence applications", "propellers, shafts, pumps, fans, blowers, motors and generators"),
+  "/industries/power-plants/": industry("power plants", "turbines, alternators and generators, pumps, fans, blowers, compressors and motors"),
+  "/industries/oil-gas/": industry("the oil and gas industry", "pumps, compressors, turbines, fans, blowers and motors"),
+  "/industries/petrochemical/": industry("petrochemical plants", "pumps, compressors, fans, blowers, turbines and motors"),
+  "/industries/steel-plants/": industry("steel plants", "rolls, shafts, fans, blowers, pumps and motors"),
+  "/industries/manufacturing/": industry("manufacturing", "motors, pumps, fans, blowers, compressors, rolls and shafts"),
+}
 export default {
   ...solutions,
+  ...industries,
   "/services/dynamic-balancing/": balancing,
   "/services/vibration-analysis/": vibration,
   "/services/laser-shaft-alignment/": alignment,
