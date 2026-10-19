@@ -149,7 +149,7 @@ for (const route of routes) {
     const h1 = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1]
     const intro = (html.match(/class="seo-hero"[\s\S]*?<p>([\s\S]*?)<\/p>/) || [])[1]
     heading = h1 ? stripTags(h1) : slugName
-    title = `${heading} | ${NAME}`
+    title = /vibrotech/i.test(heading) ? heading : `${heading} | ${NAME}`
     if (title.length > 60) title = `${heading} | VibroTech`
     if (title.length > 60) title = heading
     const fullIntro = intro ? stripTags(intro) : `${heading} from ${NAME}, Navi Mumbai.`
@@ -176,6 +176,20 @@ for (const route of routes) {
     ]
   }
 
+  if (route === '/contact/') {
+    schemas = [
+      business,
+      website,
+      { '@type': 'ContactPage', '@id': url + '#contactpage', name: heading, url, about: { '@id': BIZ_ID } },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE + '/' },
+          { '@type': 'ListItem', position: 2, name: 'Contact', item: url },
+        ],
+      },
+    ]
+  }
   const dir = route === '/' ? DIST : join(DIST, route)
   mkdirSync(dir, { recursive: true })
   writeFileSync(join(dir, 'index.html'), buildPage({ title, desc, url, schemas, html }))

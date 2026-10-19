@@ -4041,3 +4041,10 @@ footer{
 
 .seo-faq h3 { font-size: 1.05rem; margin: 1.4rem 0 0.4rem; }
 .seo-faq p { margin: 0; }
+
+.contact-page-list { list-style: none; padding: 0; margin: 0; }
+.contact-page-list li { margin: 0.4rem 0; }
+.contact-page-form { display: grid; gap: 0.5rem; max-width: 560px; }
+.contact-page-form label { font-size: 0.9rem; margin-top: 0.6rem; }
+.contact-page-form input, .contact-page-form textarea { padding: 0.7rem 0.8rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: inherit; font: inherit; }
+.contact-page-form button { margin-top: 1rem; cursor: pointer; justify-self: start; }

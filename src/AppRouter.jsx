@@ -31,6 +31,7 @@ import VibrationAnalysisNaviMumbai from './pages/VibrationAnalysisNaviMumbai'
 import RotorBalancingMaharashtra from './pages/RotorBalancingMaharashtra'
 import DynamicBalancingThane from './pages/DynamicBalancingThane'
 import DynamicBalancingPune from './pages/DynamicBalancingPune'
+import Contact from './pages/Contact'
 
 
 function ScrollToTop() {
@@ -169,6 +170,7 @@ export default function AppRouter() {
         path="/locations/dynamic-balancing-pune/"
         element={<DynamicBalancingPune />}
       />
+      <Route path="/contact/" element={<Contact />} />
       </Routes>
     </>
   )
