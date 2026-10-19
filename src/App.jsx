@@ -650,6 +650,35 @@ function App() {
         </section>
       </main>
 
+      <nav className="site-links" aria-label="Site links">
+        <div>
+          <span className="site-links-title">Contact</span>
+          <Link to="/contact/">Contact VibroTech Balancing</Link>
+        </div>
+        <div>
+          <span className="site-links-title">Balancing Solutions</span>
+          <Link to="/balancing-solutions/motor-rotor-balancing/">Motor Rotor Balancing</Link>
+          <Link to="/balancing-solutions/marine-propeller-balancing/">Marine Propeller Balancing</Link>
+          <Link to="/balancing-solutions/fan-balancing/">Fan Balancing</Link>
+          <Link to="/balancing-solutions/blower-balancing/">Blower Balancing</Link>
+          <Link to="/balancing-solutions/pump-balancing/">Pump Impeller Balancing</Link>
+          <Link to="/balancing-solutions/compressor-balancing/">Compressor Rotor Balancing</Link>
+          <Link to="/balancing-solutions/turbine-rotor-balancing/">Turbine Rotor Balancing</Link>
+          <Link to="/balancing-solutions/alternator-rotor-balancing/">Alternator Rotor Balancing</Link>
+          <Link to="/balancing-solutions/roll-balancing/">Roll Balancing</Link>
+          <Link to="/balancing-solutions/high-speed-rotor-balancing/">High-Speed Rotor Balancing</Link>
+        </div>
+        <div>
+          <span className="site-links-title">Service Locations</span>
+          <Link to="/locations/dynamic-balancing-navi-mumbai/">Dynamic Balancing Navi Mumbai</Link>
+          <Link to="/locations/dynamic-balancing-mumbai/">Dynamic Balancing Mumbai</Link>
+          <Link to="/locations/dynamic-balancing-thane/">Dynamic Balancing Thane</Link>
+          <Link to="/locations/dynamic-balancing-pune/">Dynamic Balancing Pune</Link>
+          <Link to="/locations/vibration-analysis-navi-mumbai/">Vibration Analysis Navi Mumbai</Link>
+          <Link to="/locations/rotor-balancing-maharashtra/">Rotor Balancing Maharashtra</Link>
+        </div>
+      </nav>
+
       <footer>
 
         <div className="footer-main">
