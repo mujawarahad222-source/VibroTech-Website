@@ -113,6 +113,12 @@ const solutions = {
   "/balancing-solutions/roll-balancing/": solution("roll balancing", "Roll balancing corrects unbalance in industrial rolls and long rotating shafts so they run smoothly and protect the machine and product quality.", "Typical signs are vibration at running speed, surface marking on the product and vibration after regrinding, repair or wear."),
   "/balancing-solutions/high-speed-rotor-balancing/": solution("high-speed rotor balancing", "High-speed rotor balancing corrects unbalance in rotors that operate at high speeds, where small residual unbalance produces large forces, so tighter balance tolerances apply.", "Typical signs are vibration that rises sharply with speed, bearing wear and vibration after repair or assembly."),
 }
+const capacity = {
+  q: "What is the largest rotor VibroTech Balancing can balance?",
+  a: "Our balancing facility handles jobs up to 20 ton in weight, up to 5 metres maximum outside diameter and up to 15 metres in length, with balancing capability up to 3000 RPM. Call " + phone + " to confirm that your rotor fits.",
+}
+balancing.splice(5, 0, capacity)
+Object.values(solutions).forEach((list) => list.splice(3, 0, capacity))
 export default {
   ...solutions,
   "/services/dynamic-balancing/": balancing,

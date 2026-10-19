@@ -30,6 +30,7 @@ export default function Contact() {
           <section className="seo-section contact-page-block">
             <h2>Visit Us</h2>
             <p>VIBROTECH BALANCING<br />R-269, T.T.C Industrial Area, Rabale<br />Navi Mumbai 400701, Maharashtra, India</p>
+            <p>GST: 27CXVPM5902P1ZH</p>
             <p><a href="https://www.google.com/maps/search/?api=1&query=R-269+T.T.C+Industrial+Area+Rabale+Navi+Mumbai+400701" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p>
           </section>
 

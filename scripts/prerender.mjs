@@ -52,6 +52,7 @@ const business = {
   logo: LOGO,
   image: LOGO,
   email: EMAIL,
+  taxID: '27CXVPM5902P1ZH',
   telephone: '+91-8454987213',
   description:
     'Industrial dynamic balancing, vibration analysis, laser shaft alignment, condition monitoring and rotating-equipment engineering services.',
