@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import FAQ from '../faqData'
 
 export default function SEOPage({
   eyebrow,
@@ -7,6 +8,10 @@ export default function SEOPage({
   sections = [],
   related = [],
 }) {
+  const { pathname } = useLocation()
+  const faqs = FAQ[pathname] || []
+  const faqSchema = faqs.length ? JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) }).replace(/</g, '\\u003c') : ''
+
   return (
     <main className="seo-page">
       <div className="seo-page-inner">
@@ -37,6 +42,19 @@ export default function SEOPage({
             </section>
           ))}
         </div>
+
+        {faqs.length > 0 && (
+          <section className="seo-section seo-faq">
+            <h2>Frequently Asked Questions</h2>
+            {faqs.map((x) => (
+              <div key={x.q}>
+                <h3>{x.q}</h3>
+                <p>{x.a}</p>
+              </div>
+            ))}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />
+          </section>
+        )}
 
         {related.length > 0 && (
           <section className="seo-related">
