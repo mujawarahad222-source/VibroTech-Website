@@ -186,7 +186,7 @@ function App() {
             <aside className="sensor-panel panel">
               <div className="panel-head"><div><span>6-POINT MONITORING</span><strong>SENSOR MAP</strong></div></div>
               <div className="sensor-map">
-                <div className="sensor-motor-outline"><img src="/motor-top-view.png" alt="Motor sensor map"/></div>
+                <div className="sensor-motor-outline"><img src="/motor-top-view.webp" alt="Motor sensor map"/></div>
                 {sensorPoints.map(([side, dir, label], i) => (
                   <button
                     key={label}
