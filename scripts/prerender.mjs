@@ -159,6 +159,20 @@ for (const route of routes) {
     if (title.length > 60) title = heading
     const fullIntro = intro ? stripTags(intro) : `${heading} from ${NAME}, Navi Mumbai.`
     desc = clip(fullIntro, 155)
+    const OVERRIDES = {
+      '/rent-before-you-buy/': {
+        title: 'Rent a Balancing Machine Before You Buy | VibroTech',
+        desc: 'Rent a dynamic balancing machine and test it on your own rotors before you buy. Buy the same machine or order a new one. VibroTech Balancing, Navi Mumbai.',
+      },
+      '/about/': { title: 'About VibroTech Balancing | Dynamic Balancing Navi Mumbai' },
+      '/industries/marine/': { title: 'Marine Balancing and Vibration Services | VibroTech' },
+      '/industries/naval-defence/': { title: 'Naval and Defence Rotor Balancing | VibroTech' },
+      '/industries/oil-gas/': { title: 'Oil & Gas Rotating Equipment Balancing | VibroTech' },
+    }
+    if (OVERRIDES[route]) {
+      if (OVERRIDES[route].title) title = OVERRIDES[route].title
+      if (OVERRIDES[route].desc) desc = OVERRIDES[route].desc
+    }
     schemas = [
       business,
       website,
