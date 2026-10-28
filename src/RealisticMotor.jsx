@@ -1,4 +1,4 @@
-﻿import './RealisticMotor.css'
+import './RealisticMotor.css'
 
 export default function RealisticMotor({ rpm=3000, vibration=2.14, status='NORMAL' }) {
   return (
@@ -16,7 +16,7 @@ export default function RealisticMotor({ rpm=3000, vibration=2.14, status='NORMA
         <span>VIBRATION</span><strong>{Number(vibration).toFixed(2)} mm/s RMS</strong>
       </div>
       <div className="realistic-motor-image-wrap">
-        <img className="realistic-motor-image" src="/motor-top-view.png" alt="High voltage industrial induction motor top view"/>
+        <img className="realistic-motor-image" src="/motor-top-view.webp" alt="High voltage industrial induction motor top view"/>
         <div className="realistic-motor-scan" />
         <div className="realistic-motor-pulse" />
       </div>
