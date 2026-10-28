@@ -118,6 +118,42 @@ const capacity = {
   a: "Our balancing facility handles jobs up to 20 ton in weight, up to 5 metres maximum outside diameter and up to 15 metres in length, with balancing capability up to 3000 RPM. Call " + phone + " to confirm that your rotor fits.",
 }
 balancing.splice(5, 0, capacity)
+balancing.splice(6, 0,
+  {
+    q: "How much does dynamic balancing cost?",
+    a: "The cost depends on rotor weight, diameter, length, operating speed, the balance grade required and whether any correction work is needed. Call " + phone + " or email vibrotechbalancing@gmail.com with these details to get a quote.",
+  },
+  {
+    q: "How long does rotor balancing take?",
+    a: "Many jobs are completed and delivered the same day, depending on rotor size and how many correction runs are needed. For urgent shutdown work we extend our working time to meet your restart schedule, and we handle many jobs each day. Call " + phone + " with the rotor details for a time estimate.",
+  },
+  {
+    q: "What is the difference between static, couple and dynamic unbalance?",
+    a: "Static unbalance is a heavy spot on one plane, couple unbalance is two opposite heavy spots on different planes, and dynamic unbalance is a combination of both. Dynamic unbalance is corrected by balancing in two planes.",
+  },
+  {
+    q: "What do balance grades such as G2.5 and G6.3 mean?",
+    a: "A balance grade, defined in ISO 21940-11, sets the allowed residual unbalance for a rotor based on its running speed. A lower number such as G2.5 is stricter than G6.3 and is used for more sensitive, higher-speed rotors.",
+  },
+  {
+    q: "Can I rent a balancing machine before buying one?",
+    a: "Yes. VibroTech Balancing offers a rent-before-you-buy program so you can test a balancing machine on your own rotors before deciding to buy the same machine or order a new one. Call " + phone + " for details.",
+  }
+)
+balancing.splice(6, 0,
+  {
+    q: "Do you offer on-site or in-situ balancing?",
+    a: "Yes. VibroTech Balancing provides on-site (in-situ) balancing at the customer's plant, at any location, so the rotor can be balanced in its own bearings without dismantling the machine. Call " + phone + " with the machine type and location.",
+  },
+  {
+    q: "Can you support urgent shutdown balancing work?",
+    a: "Yes. We support urgent shutdown and breakdown work and extend our working time to help you restart on schedule. Call " + phone + " as early as possible with the equipment details so we can plan the job.",
+  },
+  {
+    q: "Do you deliver balanced rotors the same day?",
+    a: "On many jobs, yes. Same-day delivery is possible depending on rotor size and the correction work needed, and we handle many jobs each day. Call " + phone + " to confirm the timing for your rotor.",
+  }
+)
 Object.values(solutions).forEach((list) => list.splice(3, 0, capacity))
 const industry = (name, equipment) => [
   {

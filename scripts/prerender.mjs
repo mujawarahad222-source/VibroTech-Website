@@ -39,6 +39,10 @@ const areaServed = [
   { '@type': 'City', name: 'Mumbai' },
   { '@type': 'City', name: 'Thane' },
   { '@type': 'City', name: 'Pune' },
+  { '@type': 'City', name: 'Rabale' },
+  { '@type': 'City', name: 'Panvel' },
+  { '@type': 'City', name: 'Taloja' },
+  { '@type': 'AdministrativeArea', name: 'Raigad' },
   { '@type': 'State', name: 'Maharashtra' },
   { '@type': 'Country', name: 'India' },
 ]
@@ -73,7 +77,7 @@ const business = {
   knowsAbout: [
     'Dynamic Balancing', 'Rotor Balancing', 'Motor Rotor Balancing', 'Vibration Analysis', 'Laser Shaft Alignment',
     'Condition Monitoring', 'Marine Propeller Balancing', 'Turbine Rotor Balancing', 'Fan Balancing',
-    'Blower Balancing', 'Pump Balancing', 'Compressor Balancing', 'Industrial Rotating Equipment',
+    'Blower Balancing', 'Pump Balancing', 'Compressor Balancing', 'Industrial Rotating Equipment', 'Alternator Rotor Balancing', 'Roll Balancing', 'High-Speed Rotor Balancing', 'Thermography', 'Shaft Grinding', 'Heavy Machining', 'Balancing Machine Rental', 'ISO 21940 Balance Quality', 'ISO 20816 Vibration Severity', 'Bearing Fault Analysis', 'Rotating Equipment Reliability', 'On-Site Balancing', 'In-Situ Balancing', 'Field Balancing', 'Shutdown Maintenance Support',
   ],
 }
 
@@ -224,19 +228,24 @@ const groups = [
 ]
 let llms = `# VibroTech Balancing
 
-> Industrial dynamic balancing, vibration analysis, laser shaft alignment, condition monitoring and rotating-equipment engineering services, based in Rabale, Navi Mumbai, Maharashtra, India. Serves Navi Mumbai, Mumbai, Thane, Pune and industrial customers across Maharashtra.
+> Industrial dynamic balancing, vibration analysis, laser shaft alignment, condition monitoring and rotating-equipment engineering services, based in Rabale, Navi Mumbai, Maharashtra, India. Also provides on-site (in-situ) balancing at customer locations. Serves Rabale, Navi Mumbai, Mumbai, Thane, Pune, Panvel, Taloja, Raigad and industrial customers across Maharashtra.
 
 ## Contact
 - Address: R-269, T.T.C Industrial Area, Rabale, Navi Mumbai 400701, Maharashtra, India
 - Phone: +91 84549 87213, +91 98674 27537, +91 77109 67549
 - Email: ${EMAIL}
 - Website: ${SITE}/
+- GST: 27CXVPM5902P1ZH
+- Balancing capacity: rotors up to 20 ton in weight, up to 5 metres outside diameter, up to 15 metres in length, balancing speed up to 3000 RPM
+- On-site service: on-site (in-situ) balancing at the customers plant, at any location, without dismantling the machine
+- Turnaround: many jobs are delivered the same day; extended working time for urgent shutdown work; many jobs handled each day
 `
 for (const [seg, label] of groups) {
   const items = pages.filter((p) => p.route.split('/')[1] === seg)
   if (!items.length) continue
   llms += `\n## ${label}\n` + items.map((p) => `- [${p.heading}](${p.url}): ${p.desc}`).join('\n') + '\n'
 }
+llms += `\n## Other Pages\n- [About Us](${SITE}/about/)\n- [Rent Before You Buy](${SITE}/rent-before-you-buy/): rent a balancing machine, test it on your own rotors, then buy the same machine or order a new one\n`
 writeFileSync(join(DIST, 'llms.txt'), llms)
 
 console.log(`[prerender] ${pages.length} pages written (${withBody} with server-rendered body). lastmod=${lastmod}`)
