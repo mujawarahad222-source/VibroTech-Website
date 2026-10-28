@@ -361,14 +361,14 @@ function App() {
               <p>Balancing, vibration and rotating-equipment services for demanding industrial environments.</p>
             </div>
             <div className="industries-grid">
-              <Link to="/industries/marine/" className="industry-card"><video className="industry-video" src="/videos/MARINE.mp4" autoPlay muted loop playsInline preload="metadata" /><span>01</span><strong>MARINE</strong></Link>
-              <Link to="/industries/power-plants/" className="industry-card"><video className="industry-video" src="/videos/POWER%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>02</span><strong>POWER PLANTS</strong></Link>
-              <Link to="/industries/oil-gas/" className="industry-card"><video className="industry-video" src="/videos/OIL%20%26%20GAS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>03</span><strong>OIL &amp; GAS</strong></Link>
-              <Link to="/industries/petrochemical/" className="industry-card"><video className="industry-video" src="/videos/PETROCHEMICAL.mp4" autoPlay muted loop playsInline preload="metadata" /><span>04</span><strong>PETROCHEMICAL</strong></Link>
-              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/NAVY.mp4" autoPlay muted loop playsInline preload="metadata" /><span>05</span><strong>NAVY</strong></Link>
-              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/COAST%20GUARD.mp4" autoPlay muted loop playsInline preload="metadata" /><span>06</span><strong>COAST GUARD</strong></Link>
-              <Link to="/industries/manufacturing/" className="industry-card"><video className="industry-video" src="/videos/MANUFACTURERS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>07</span><strong>MANUFACTURERS</strong></Link>
-              <Link to="/industries/steel-plants/" className="industry-card"><video className="industry-video" src="/videos/STEEL%20PLANTS.mp4" autoPlay muted loop playsInline preload="metadata" /><span>08</span><strong>STEEL PLANTS</strong></Link>
+              <Link to="/industries/marine/" className="industry-card"><video className="industry-video" src="/videos/MARINE.mp4" muted loop playsInline preload="none" /><span>01</span><strong>MARINE</strong></Link>
+              <Link to="/industries/power-plants/" className="industry-card"><video className="industry-video" src="/videos/POWER%20PLANTS.mp4" muted loop playsInline preload="none" /><span>02</span><strong>POWER PLANTS</strong></Link>
+              <Link to="/industries/oil-gas/" className="industry-card"><video className="industry-video" src="/videos/OIL%20%26%20GAS.mp4" muted loop playsInline preload="none" /><span>03</span><strong>OIL &amp; GAS</strong></Link>
+              <Link to="/industries/petrochemical/" className="industry-card"><video className="industry-video" src="/videos/PETROCHEMICAL.mp4" muted loop playsInline preload="none" /><span>04</span><strong>PETROCHEMICAL</strong></Link>
+              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/NAVY.mp4" muted loop playsInline preload="none" /><span>05</span><strong>NAVY</strong></Link>
+              <Link to="/industries/naval-defence/" className="industry-card"><video className="industry-video" src="/videos/COAST%20GUARD.mp4" muted loop playsInline preload="none" /><span>06</span><strong>COAST GUARD</strong></Link>
+              <Link to="/industries/manufacturing/" className="industry-card"><video className="industry-video" src="/videos/MANUFACTURERS.mp4" muted loop playsInline preload="none" /><span>07</span><strong>MANUFACTURERS</strong></Link>
+              <Link to="/industries/steel-plants/" className="industry-card"><video className="industry-video" src="/videos/STEEL%20PLANTS.mp4" muted loop playsInline preload="none" /><span>08</span><strong>STEEL PLANTS</strong></Link>
             </div>
           </div>
         </section>
