@@ -4170,3 +4170,4 @@ footer{
 .is-offscreen,.is-offscreen *,.is-offscreen *::before,.is-offscreen *::after{animation-play-state:paused !important}
 @media(max-width:768px){*{-webkit-backdrop-filter:none !important;backdrop-filter:none !important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important}}
+/* RENT-MOBILE-FULL */ @media(max-width:768px){.rent-page::before{background-size:contain !important;background-position:center 30% !important;background-repeat:no-repeat !important}}
