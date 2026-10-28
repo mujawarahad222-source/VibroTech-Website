@@ -4171,3 +4171,14 @@ footer{
 @media(max-width:768px){*{-webkit-backdrop-filter:none !important;backdrop-filter:none !important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important}}
 /* RENT-MOBILE-FULL */ @media(max-width:768px){.rent-page::before{background-size:contain !important;background-position:center 30% !important;background-repeat:no-repeat !important}}
+
+/* FOOTER-MOBILE-CENTER */
+@media(max-width:768px){
+  footer{flex-direction:column !important;align-items:center !important;justify-content:center !important;text-align:center !important;gap:14px !important}
+  footer .footer-main{display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;text-align:center !important;gap:10px !important;width:100% !important}
+  footer .footer-main span{text-align:center !important}
+  footer .visitor-counter{display:flex !important;align-items:center !important;justify-content:center !important;margin-left:auto !important;margin-right:auto !important;text-align:center !important}
+  .site-links{flex-direction:column !important;align-items:center !important;text-align:center !important;gap:26px !important}
+  .site-links div{align-items:center !important;min-width:0 !important;width:100% !important}
+}
+/* END-FOOTER-MOBILE-CENTER */
