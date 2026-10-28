@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 export default function RentBeforeYouBuy() {
   useEffect(() => {
-    document.title = 'Rent Before You Buy | Balancing Machine Rental | VibroTech Balancing'
+    document.title = 'Rent a Balancing Machine Before You Buy | VibroTech'
     const d = document.querySelector('meta[name="description"]')
-    if (d) d.setAttribute('content', 'Rent a balancing machine before you buy. Test it in your own plant, then buy the same machine, order a brand new one or return it. Customized machines available.')
+    if (d) d.setAttribute('content', 'Rent a dynamic balancing machine and test it on your own rotors before you buy. Buy the same machine or order a new one. VibroTech Balancing, Navi Mumbai.')
     window.scrollTo(0, 0)
   }, [])
   return (
